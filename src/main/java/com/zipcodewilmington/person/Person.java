@@ -4,28 +4,33 @@ package com.zipcodewilmington.person;
  * Created by leon on 2/12/18.
  */
 public class Person {
-    private String name = "Leon";
-    private int age = 5;
+    private String name;
+    private int age;
 
     public Person() {
-
+        age = Integer.MAX_VALUE;
+        name = "";
     }
 
     public Person(int age) {
+        this.age = age;
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
     public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public void setName(String name) {
-        System.out.println(name);
+        this.name = name;
     }
 
     public void setAge(int age) {
-        System.out.println(age);
+        this.age = age;
     }
 
     public String getName() {
