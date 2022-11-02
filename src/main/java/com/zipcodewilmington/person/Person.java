@@ -7,9 +7,24 @@ public class Person {
     private String name;
     private int age;
 
+    private String gender;
+
+    private String city;
+
+    private int postalCode;
+
+    private int shoeSize;
+
+    private String hairColor;
+
     public Person() {
         age = Integer.MAX_VALUE;
         name = "";
+        gender = "";
+        city = "";
+        postalCode = Integer.MAX_VALUE;
+        shoeSize = Integer.MAX_VALUE;
+        hairColor = "";
     }
 
     public Person(int age) {
@@ -23,6 +38,15 @@ public class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+    public Person(String name, int age, String gender, String city, int postalCode, int shoeSize, String hairColor) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.city = city;
+        this.postalCode = postalCode;
+        this.shoeSize = shoeSize;
+        this.hairColor = hairColor;
     }
 
     public void setName(String name) {
@@ -40,4 +64,40 @@ public class Person {
     public Integer getAge() {
         return age;
     }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+    public void setCity(String city) {
+        this.city = city;
+    }
+    public String getCity() {
+        return city;
+    }
+    public void setPostalCode(int postalCode) {
+        this.postalCode = postalCode;
+    }
+    public Integer getPostalCode() {
+        return postalCode;
+    }
+
+    public void setShoeSize(int shoeSize) {
+        this.shoeSize = shoeSize;
+    }
+
+    public Integer getShoeSize() {
+        return shoeSize;
+    }
+
+    public void setHairColor(String hairColor) {
+        this.hairColor = hairColor;
+    }
+
+    public String getHairColor() {
+        return hairColor;
+    }
+
 }
